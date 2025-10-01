@@ -9,17 +9,19 @@
   <body>
     <button
       class="button-1"
-      onclick="cartQuantity += 1; 
+      onclick=" cartQuantity++; 
     document.querySelector('#cart-summary').innerText = `Your Bag Has ${cartQuantity} Items`; "
     >
       Add to Bag
     </button>
 
-    <button class="button-2" onclick="alert('Added to Wishlist')">
+    <button class="button-2" onclick=" cartQuantity--; 
+    document.querySelector('#cart-summary').innerText = `Your Bag Has ${cartQuantity} Items`; "">
       Move to Wishlist
     </button>
 
-    <button class="button-1" onclick="alert('Added to bag')">
+    <button class="button-1" onclick=" cartQuantity += 2; 
+    document.querySelector('#cart-summary').innerText = `Your Bag Has ${cartQuantity} Items`; "">
       Add 1+1 sale item
     </button>
 
