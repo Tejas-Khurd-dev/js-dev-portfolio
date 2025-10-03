@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope Variable</title>
+  </head>
+  <body>
+    <h1>Hi!</h1>
+
+    <script>
+      let globalScope = "Global";
+      console.log(globalScope);
+      {
+        console.log(globalScope);
+
+        let message = "Hi";
+        console.log(message);
+
+        var number = 4; // -> Does not follow scope
+        console.log(number);
+      }
+      //   console.log(message); // --> error(ReferenceError):  Cannot access 'message' before initialization at scope_variable.html
+
+      let message = "By";
+      console.log(message);
+
+      console.log(number);
+      var number = 6;
+      console.log(number);
+    </script>
+  </body>
+</html>
