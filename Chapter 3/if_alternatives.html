@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If Alternatives</title>
+  </head>
+  <body>
+    <h1>Hi!</h1>
+
+    <script>
+      // Ternary Operator
+      let age = 18;
+      console.log(age > 18 ? "Adult" : "Kid");
+
+      // Guard Operator
+      age = 32;
+      let finalAge = age || 18;
+      console.log(finalAge);
+
+      age = null;
+      console.log(finalAge);
+    </script>
+  </body>
+</html>
