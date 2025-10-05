@@ -13,7 +13,9 @@
     <div>
       <button
         class="bat"
-        onclick="document.querySelector('#user-choice').innerText = 'You have chosen Bat';
+        onclick="
+        randomNumber = Math.floor(Math.random() * 3);
+        document.querySelector('#user-choice').innerText = 'You have chosen Bat';
       if(randomNumber === 0) document.querySelector('#result-declaration').innerText = 'Computer chose Bat → TIE!';
       else if(randomNumber === 1) document.querySelector('#result-declaration').innerText = 'Computer chose Ball → YOU WIN!';
       else document.querySelector('#result-declaration').innerText = 'Computer chose Stump → YOU LOSE!';"
@@ -23,7 +25,9 @@
 
       <button
         class="ball"
-        onclick="document.querySelector('#user-choice').innerText = 'You have chosen Ball';
+        onclick="
+        randomNumber = Math.floor(Math.random() * 3);
+        document.querySelector('#user-choice').innerText = 'You have chosen Ball';
       if(randomNumber === 0) document.querySelector('#result-declaration').innerText = 'Computer chose Bat → YOU LOSE!';
       else if(randomNumber === 1) document.querySelector('#result-declaration').innerText = 'Computer chose Ball → TIE!';
       else document.querySelector('#result-declaration').innerText = 'Computer chose Stump → YOU WIN!';"
@@ -33,7 +37,9 @@
 
       <button
         class="stump"
-        onclick="document.querySelector('#user-choice').innerText = 'You have chosen Stump';
+        onclick="
+        randomNumber = Math.floor(Math.random() * 3);
+        document.querySelector('#user-choice').innerText = 'You have chosen Stump';
       if(randomNumber === 0) document.querySelector('#result-declaration').innerText = 'Computer chose Bat → YOU WIN!';
       else if(randomNumber === 1) document.querySelector('#result-declaration').innerText = 'Computer chose Ball → YOU LOSE!';
       else document.querySelector('#result-declaration').innerText = 'Computer chose Stump → TIE!';"

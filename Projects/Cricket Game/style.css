@@ -38,3 +38,8 @@ button:hover {
   color: rgb(0, 155, 239);
   text-align: center;
 }
+
+#user-choice {
+  color: rgb(100, 239, 0);
+  text-align: center;
+}

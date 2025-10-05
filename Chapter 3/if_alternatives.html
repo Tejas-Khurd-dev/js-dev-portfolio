@@ -11,14 +11,20 @@
     <script>
       // Ternary Operator
       let age = 18;
-      console.log(age > 18 ? "Adult" : "Kid");
+      console.log(((age) => 18) ? "Adult" : "Kid");
 
       // Guard Operator
       age = 32;
       let finalAge = age || 18;
       console.log(finalAge);
 
-      age = null;
+      age = 0;
+      finalAge = age || 18;
+      console.log(finalAge);
+
+      // Default operator -> Only consider null and undefines as falsy
+      age = 0;
+      finalAge = age ?? 18;
       console.log(finalAge);
     </script>
   </body>
