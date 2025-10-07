@@ -11,41 +11,9 @@
     <h2>Choose Bat, Ball or Stump</h2>
 
     <div>
-      <button
-        class="bat"
-        onclick="
-        randomNumber = Math.floor(Math.random() * 3);
-        document.querySelector('#user-choice').innerText = 'You have chosen Bat';
-      if(randomNumber === 0) document.querySelector('#result-declaration').innerText = 'Computer chose Bat → TIE!';
-      else if(randomNumber === 1) document.querySelector('#result-declaration').innerText = 'Computer chose Ball → YOU WIN!';
-      else document.querySelector('#result-declaration').innerText = 'Computer chose Stump → YOU LOSE!';"
-      >
-        Bat
-      </button>
-
-      <button
-        class="ball"
-        onclick="
-        randomNumber = Math.floor(Math.random() * 3);
-        document.querySelector('#user-choice').innerText = 'You have chosen Ball';
-      if(randomNumber === 0) document.querySelector('#result-declaration').innerText = 'Computer chose Bat → YOU LOSE!';
-      else if(randomNumber === 1) document.querySelector('#result-declaration').innerText = 'Computer chose Ball → TIE!';
-      else document.querySelector('#result-declaration').innerText = 'Computer chose Stump → YOU WIN!';"
-      >
-        Ball
-      </button>
-
-      <button
-        class="stump"
-        onclick="
-        randomNumber = Math.floor(Math.random() * 3);
-        document.querySelector('#user-choice').innerText = 'You have chosen Stump';
-      if(randomNumber === 0) document.querySelector('#result-declaration').innerText = 'Computer chose Bat → YOU WIN!';
-      else if(randomNumber === 1) document.querySelector('#result-declaration').innerText = 'Computer chose Ball → YOU LOSE!';
-      else document.querySelector('#result-declaration').innerText = 'Computer chose Stump → TIE!';"
-      >
-        Stump
-      </button>
+      <button class="bat" onclick="playGame('Bat')">Bat</button>
+      <button class="ball" onclick="playGame('Ball')">Ball</button>
+      <button class="stump" onclick="playGame('Stump')">Stump</button>
     </div>
 
     <h3 id="user-choice"></h3>
