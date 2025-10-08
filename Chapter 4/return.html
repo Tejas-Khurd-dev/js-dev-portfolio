@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Return</title>
+  </head>
+  <body>
+    <h1>Hi!</h1>
+
+    <script>
+      let a = 6;
+      let b = 8;
+
+      function mul(a, b) {
+        return a * b;
+      }
+
+      console.log("Multiplication result:", mul(a, b));
+
+      let age = 40;
+
+      function driveAgeTest(age) {
+        if (age < 1) {
+          return "Invalid Input";
+        }
+
+        if (age >= 18) {
+          return "You can drive";
+        } else {
+          return "You cannot drive";
+        }
+      }
+
+      console.log(driveAgeTest(age));
+    </script>
+  </body>
+</html>
