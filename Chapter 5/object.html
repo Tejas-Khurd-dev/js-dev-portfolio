@@ -12,17 +12,25 @@
       let product = {
         company: "Nike",
         item_name: "Shoes",
-        price:  456,
+        price: 456,
         "color-info": "white",
-      }
-      console.log(product)
-      console.log(product.company)
-      console.log(product["company"])
+      };
 
-      product.company = "Puma"
-      console.log(product)
-      console.log(product.price)
-      console.log(product."color-info")
+      console.log(product);
+      console.log(product.company);
+      console.log(product["company"]);
+
+      product.company = "Puma";
+      console.log(product);
+      console.log(product.price);
+      console.log(product["color-info"]);
+
+      let companyNewName = "company";
+      console.log(product[companyNewName]);
+
+      delete product.company;
+      // OR --> delete product["company"]
+      console.log(product);
     </script>
   </body>
 </html>
