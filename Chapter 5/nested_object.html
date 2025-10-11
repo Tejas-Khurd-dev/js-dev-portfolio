@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Object</title>
+  </head>
+  <body>
+    <h1>Hi!</h1>
+
+    <script>
+      let product = {
+        company: "Mango",
+        itemName: "T-Shirt",
+        price: "879",
+        rating: {
+          stars: 4.5,
+          review: 58,
+        },
+        displayPrice: function () {
+          return `fixed price: ${product.price}`;
+        },
+      };
+
+      console.log("Company:", product.company);
+      console.log("Item Name:", product.itemName);
+      console.log("Price:", product.price);
+      console.log("Rating Stars:", product.rating.stars);
+      console.log("Rating Review Count:", product.rating.review);
+      console.log(product.displayPrice());
+    </script>
+  </body>
+</html>

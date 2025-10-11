@@ -12,11 +12,22 @@ h2 {
   text-align: center;
 }
 
-div {
+.play {
   display: flex;
   align-items: center;
   justify-content: center;
   border: 2px solid blue;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.count > h2 {
+    padding: 10px;
+    color: rgb(32, 149, 245);
 }
 
 button {
