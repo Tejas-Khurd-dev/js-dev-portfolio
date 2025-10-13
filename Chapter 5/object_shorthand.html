@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Shorthand</title>
+  </head>
+  <body>
+    <h1>Hi!</h1>
+
+    <script>
+      let ratingStar = 4.5;
+      let product = {
+        company: "Mango",
+        price: 861,
+        "item-name": "T-shirt",
+        size: "M",
+        // ratingStar: ratingStar,
+        ratingStar, // Shorthand
+
+        // displayPrice : function () {
+        //   return this.price
+        // }
+        displayPrice() {
+          // Shorthand
+          return this.price;
+        },
+      };
+
+      // let company = product.company;
+      // let {company} = product; --> Shorthand
+      let { company, price } = product;
+      console.log(company);
+      console.log(price);
+
+      // let productSize = product.size;
+      let { size: productSize } = product; // --> Shorthand
+      console.log(productSize);
+
+      console.log(product.ratingStar);
+      console.log(product.displayPrice());
+    </script>
+  </body>
+</html>
