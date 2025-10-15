@@ -40,9 +40,19 @@ button {
   width: 75px;
 }
 
+
 button:hover {
   transform: translateY(-1px);
   background-color: #62ff00;
+}
+
+.reset > button{
+  background-color: rgb(254, 128, 128);
+  border: 1px solid rgb(254, 128, 128);
+}
+#reset-button:hover {
+  transform: translateY(-1px);
+  background-color: red;
 }
 
 #result-declaration {
