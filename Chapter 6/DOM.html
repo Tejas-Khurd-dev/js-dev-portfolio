@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1>Hi!</h1>
+
+    <button class="my-button">Click Me</button>
+
+    <div class="my-div"></div>
+
+    <script>
+      console.log(document.location);
+      console.log(document.location.href);
+      console.log(document.title);
+
+      document.title = "DOM Properties and Method";
+      console.log(document.title);
+
+      console.log(document.domain);
+      console.log(document.querySelector(".my-button").classList);
+      document.querySelector(".my-button").classList.add("click-me-button");
+      document.querySelector(".my-button").classList.remove("my-button");
+
+      let para1 = document.createElement("p");
+      para1.innerText = "This is my div";
+      document.querySelector(".my-div").appendChild(para1);
+
+      let button = document.createElement("button");
+      button.innerText = "Div-Button";
+      document.querySelector(".my-div").appendChild(button);
+      document.querySelector(".my-div").removeChild(button);
+
+      let para2 = document.createElement("p");
+      para2.innerText = "Div Heading";
+      document.querySelector(".my-div").appendChild(para2);
+
+      let heading = document.createElement("h1");
+      heading.innerText = "Div Heading";
+      document.querySelector(".my-div").replaceChild(heading, para2);
+    </script>
+  </body>
+</html>
