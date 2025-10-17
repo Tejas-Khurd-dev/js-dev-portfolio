@@ -17,6 +17,7 @@ h2 {
   align-items: center;
   justify-content: center;
   border: 2px solid blue;
+  height: 10em;
 }
 
 .count {
@@ -31,19 +32,23 @@ h2 {
 }
 
 button {
-  margin: 10px;
+  margin: 20px;
   padding: 5px 10px;
   border-radius: 8px;
-  background-color: #baf198;
+  background-color: #f0f0f000;
   box-sizing: border-box;
-  height: 40px;
-  width: 75px;
+  height: 80px;
+  width: 150px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
 button:hover {
   transform: translateY(-1px);
-  background-color: #62ff00;
+  background-color: #1e00ff2d;
 }
 
 .reset > button{
